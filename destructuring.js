@@ -9,3 +9,7 @@ console.log(PI === Math.PI)
 PI = 7
 
 console.log(PI === Math.PI)
+
+
+const [a, b, ...c] = [1, 2, 3, 4];
+console.log(c)
