@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <table id="outside">
+            <tr>
+                <td id="t1">one</td>
+            </tr>
+            <tr>
+                <td id="t2">two</td>
+            </tr>
+        </table>
+    </body>
+    <script>
+        function modifyText(new_text) {
+            const t2 = document.getElementById('t2');
+            t2.firstChild.nodeValue = new_text;
+        }
+        const el = document.getElementById("outside");
+        el.addEventListener("click", () => { modifyText("four"); }, false);
+    </script>
+</html>
