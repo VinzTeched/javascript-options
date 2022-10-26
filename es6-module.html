@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <script type="module">
+            import { informalGreeting } from './greeting.js';
+            informalGreeting('Jane');
+        </script>
+        <script type="module">
+            import { informalGreeting, formalGreeting } from './greeting.js';
+            import greeting from './greeting.js';
+            formalGreeting('John');
+            greeting();
+        </script>
+    </body>
+</html>
